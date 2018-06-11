@@ -15,9 +15,13 @@ add_action('wp_enqueue_scripts','theme_files');
 function theme_js() {
 	wp_enqueue_script('jquery');
 	wp_enqueue_script( 'bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js');
-	//wp_enqueue_script( 'my_custom_js', get_template_directory_uri() . '/js/scripts.js');
+
 }
 add_action( 'wp_enqueue_scripts', 'theme_js');
 
+function my_scripts() {
+	wp_enqueue_script( 'my_custom_js', get_template_directory_uri() . '/js/scripts.js', array('jquery'), null, true);
+}
+add_action('admin_enqueue_scripts', 'my_scripts');
 //eliminar toolbar de wordpress
 add_filter('show_admin_bar', '__return_false');

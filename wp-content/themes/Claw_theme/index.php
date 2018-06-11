@@ -7,6 +7,9 @@
  */
 get_header();
 ?>
+
+   <!-- <img class="first-slide" src="<?php /*echo get_theme_file_uri( 'images/moonchild.jpg' ) */?>"
+         alt="First slide">-->
     <!-- Carousel
 	 ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -16,47 +19,20 @@ get_header();
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
+
+        <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img class="first-slide" src="<?php echo get_theme_file_uri( 'images/moonchild.jpg' ) ?>"
+                <img class="first-slide" src="<?php echo get_theme_file_uri( 'images/crow.jpg' ) ?>"
                      alt="First slide">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Example headline.</h1>
-                        <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous"
-                            Glyphicon buttons on the left and right might not load/display properly due to web browser
-                            security rules.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img class="second-slide"
-                     src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-                     alt="Second slide">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img class="third-slide"
-                     src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-                     alt="Third slide">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>One more for good measure.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-                    </div>
+                <div class="carousel-caption">
+                    <h3>New York</h3>
+                    <p>The atmosphere in New York is lorem ipsum.</p>
                 </div>
             </div>
         </div>
+
+        <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -65,7 +41,8 @@ get_header();
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div><!-- /.carousel -->
+    </div>
+    <!-- /.carousel -->
 
 
     <!-- Marketing messaging and featurettes
@@ -161,6 +138,38 @@ get_header();
         <hr class="featurette-divider">
 
         <!-- /END THE FEATURETTES -->
+        <!-- Contact -->
+        <div id="contact" class="container">
+            <h3 class="text-center">Contact</h3>
+            <p class="text-center"><em>We love our fans!</em></p>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Fan? Drop a note.</p>
+                    <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
+                    <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+                    <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                        </div>
+                    </div>
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <button class="btn pull-right" type="submit">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- End contact -->
 
 <?php
 get_footer()
