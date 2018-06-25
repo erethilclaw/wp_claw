@@ -6,6 +6,7 @@
 <!-- NAVBAR
 ================================================== -->
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<div class="container-fluid">
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -14,11 +15,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#myPage">Logo</a>
+            <a class="navbar-brand" href="<?php echo site_url()?>">Logo</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#myPage">HOME</a></li>
+                <li><a href="<?php echo site_url()?>">HOME</a></li>
                 <li><a href="#band">BAND</a></li>
                 <li><a href="#tour">TOUR</a></li>
                 <li><a href="#contact">CONTACT</a></li>
@@ -36,5 +37,6 @@
         </div>
     </div>
 </nav>
+</div>
 
 
