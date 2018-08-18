@@ -7,7 +7,7 @@
  */
     wp_footer();
 ?>
-</div><!-- /.container -->
+</div><!-- /.container fluid header -->
 <!-- FOOTER -->
 <div class="container-fluid footer">
     <div class="container">
