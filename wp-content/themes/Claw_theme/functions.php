@@ -31,3 +31,19 @@ function claw_features(){
 }
 add_action('after_setup_theme','claw_features');
 
+// sidebar functions
+add_action('widgets_init','blog_sidebar');
+function blog_sidebar(){
+	register_sidebar(
+		array(
+			'name'=>'blog_sidebar',
+			'id'=>'blog_sidebar',
+			'class'=>'blog_sidebar',
+			'description'=>'sidebar for the blog posts',
+			'before_widget' => '<li id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</li>',
+			'before_title'  => '<h2 class="widgettitle">',
+			'after_title'   => '</h2>'
+		)
+	);
+}

@@ -8,30 +8,16 @@ global $post;
 <div class="container-fluid">
     <div class="row content">
         <div class="col-sm-3 sidenav">
-            <ul class="nav nav-pills nav-stacked">
-                <li class="active"><a href="#section1">Home</a></li>
-                <li><a href="#section2">Friends</a></li>
-                <li><a href="#section3">Family</a></li>
-                <li><a href="#section3">Photos</a></li>
-            </ul>
-            <br>
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search Blog..">
-                <span class="input-group-btn">
-          <button class="btn btn-default" type="button">
-            <span class="glyphicon glyphicon-search"></span>
-          </button>
-        </span>
-            </div>
+            <?php get_sidebar(); ?>
         </div>
         <div class="col-sm-9">
 			<?php
 
 			$args  = array(
-			        'posts_per_page' => 5,
-                    'paged' => get_query_var('paged',1)
-                );
-            $query = new WP_Query( $args );
+				'posts_per_page' => 5,
+				'paged'          => get_query_var( 'paged', 1 )
+			);
+			$query = new WP_Query( $args );
 			if ( $query->have_posts() ) {
 				while ( $query->have_posts() ) {
 					$query->the_post(); ?>
@@ -63,10 +49,10 @@ global $post;
 			}
 			?>
 			<?php
-            echo paginate_links(array(
-                    'total'=> $query->max_num_pages,
-            ));
-            the_posts_pagination( array(
+			echo paginate_links( array(
+				'total' => $query->max_num_pages,
+			) );
+			the_posts_pagination( array(
 				'mid_size'  => 2,
 				'prev_text' => __( 'Back', 'textdomain' ),
 				'next_text' => __( 'Onward', 'textdomain' ),

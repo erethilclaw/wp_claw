@@ -169,6 +169,7 @@ get_header();
                 </div>
             </div>
         </div>
+    </div>
             <!-- End contact -->
 
 <?php

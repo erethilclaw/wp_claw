@@ -1,26 +1,32 @@
 jQuery(document).ready(function(){
-    jQuery(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    jQuery(document).ready(function(){
+        // Initialize Tooltip
+        jQuery('[data-toggle="tooltip"]').tooltip();
 
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
+        // Add smooth scrolling to all links in navbar + footer link
+        jQuery(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
-            // Prevent default anchor click behavior
-            event.preventDefault();
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
 
-            // Store hash
-            var hash = this.hash;
+                // Prevent default anchor click behavior
+                event.preventDefault();
 
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-            jQuery('html, body').animate({
-                scrollTop: jQuery(hash).offset().top
-            }, 900, function(){
+                // Store hash
+                var hash = this.hash;
 
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-            });
-        } // End if
-    });
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    })
 })
 
 

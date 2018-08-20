@@ -6,7 +6,7 @@
 <!-- NAVBAR
 ================================================== -->
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-<div class="container-fluid">
+
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -37,7 +37,7 @@
         </div>
     </div>
 </nav>
-</div>
+
 
 
 
