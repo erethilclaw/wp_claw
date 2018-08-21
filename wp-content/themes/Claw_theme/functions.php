@@ -6,6 +6,8 @@
  * Time: 16:44
  */
 
+add_theme_support('html', array('search-form'));
+
 function theme_files(){
 	wp_enqueue_style( 'bootstrap_css', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' );
 	wp_enqueue_style('claw_main_style',get_stylesheet_uri());

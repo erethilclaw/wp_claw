@@ -32,7 +32,7 @@
                         <li><a href="#">Media</a></li>
                     </ul>
                 </li>
-                <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                <li><?php get_search_form() ?></li>
             </ul>
         </div>
     </div>

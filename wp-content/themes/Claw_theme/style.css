@@ -48,7 +48,9 @@ body {
     background-color: red !important;
 }
 
-
+.search {
+    padding-top: 5px;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */

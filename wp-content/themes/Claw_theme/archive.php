@@ -13,14 +13,14 @@ global $post;
         <div class="col-sm-9">
 			<?php
 
-			$args  = array(
+			/*$args  = array(
 				'posts_per_page' => 5,
 				'paged'          => get_query_var( 'paged', 1 )
 			);
-			$query = new WP_Query( $args );
-			if ( $query->have_posts() ) {
-				while ( $query->have_posts() ) {
-					$query->the_post(); ?>
+			$query = new WP_Query( $args );*/
+			if ( have_posts() ) {
+				while ( have_posts() ) {
+					the_post(); ?>
                     <div class="container">
                         <hr>
                         <h2>
@@ -49,14 +49,14 @@ global $post;
 			}
 			?>
 			<?php
-			echo paginate_links( array(
+/*			echo paginate_links( array(
 				'total' => $query->max_num_pages,
 			) );
 			the_posts_pagination( array(
 				'mid_size'  => 2,
 				'prev_text' => __( 'Back', 'textdomain' ),
 				'next_text' => __( 'Onward', 'textdomain' ),
-			) ); ?>
+			) ); */?>
         </div>
     </div>
 </div>
