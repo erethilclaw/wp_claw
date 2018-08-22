@@ -19,8 +19,9 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
+                <? /*php wp_nav_menu();*/ ?>
                 <li><a href="<?php echo site_url()?>">HOME</a></li>
-                <li><a href="<?php echo site_url('/posts')?>">BLOG</a></li>
+                <li><a href="<?php echo site_url('blog') ?>">BLOG</a></li>
                 <li><a href="#tour">TOUR</a></li>
                 <li><a href="#contact">CONTACT</a></li>
                 <li class="dropdown">

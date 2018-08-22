@@ -28,10 +28,7 @@ add_action('admin_enqueue_scripts', 'my_scripts');
 //eliminar toolbar de wordpress
 add_filter('show_admin_bar', '__return_false');
 
-function claw_features(){
-	add_theme_support('title-tag');
-}
-add_action('after_setup_theme','claw_features');
+
 
 // sidebar functions
 add_action('widgets_init','blog_sidebar');
