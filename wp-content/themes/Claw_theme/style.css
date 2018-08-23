@@ -152,6 +152,13 @@ footer a:hover {
     resize: none;
 }
 
+/* blog */
+
+.clearbox {
+    margin-top: 3rem !important;
+    margin-bottom: 5rem !important;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
