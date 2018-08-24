@@ -6,7 +6,7 @@
  * Time: 12:24
  */
 ?>
-<div class="container">
+
 	<hr>
 	<h2>
 		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
@@ -31,4 +31,4 @@
 		<a href="<?php echo the_permalink()?>">Read more&raquo</a>
 	</p>
 	<br><br>
-</div>
+
