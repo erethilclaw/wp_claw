@@ -22,8 +22,8 @@
                 <? /*php wp_nav_menu();*/ ?>
                 <li><a href="<?php echo site_url()?>">HOME</a></li>
                 <li><a href="<?php echo site_url('blog') ?>">BLOG</a></li>
-                <li><a href="#tour">TOUR</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#tour">PRIVACY</a></li>
+                <li><a href="<?php echo site_url('contact') ?>">CONTACT</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
                         <span class="caret"></span></a>
